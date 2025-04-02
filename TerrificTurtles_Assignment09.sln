@@ -1,0 +1,23 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.11.35312.102
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{888888A0-9F3D-457C-B088-3A5042F75D52}") = "TerrificTurtles_Assignment09", "TerrificTurtles_Assignment09\TerrificTurtles_Assignment09.pyproj", "{1A78671A-9E68-4723-9E09-2DD03D8158C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1A78671A-9E68-4723-9E09-2DD03D8158C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1A78671A-9E68-4723-9E09-2DD03D8158C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C6479106-A374-4613-A8E6-87FA0D1EB66A}
+	EndGlobalSection
+EndGlobal
