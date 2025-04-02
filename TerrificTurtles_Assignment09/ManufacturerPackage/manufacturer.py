@@ -11,3 +11,23 @@
 # Citations: {"Stack Overflow" is not sufficient. Provide repeatable links, book page #, etc.}
 
 # Anything else that's relevant:
+
+
+class ManufacturerService:
+    def __init__(self, connection):
+        self.connection = connection
+
+    def get_manufacturer_name(self, manufacturer_id):
+        """
+        Fetches the manufacturer name from the tManufacturer table using a given ID.
+
+        Parameters:manufacturer_id (int): The ID of the manufacturer.
+
+        Returns:str: The name of the manufacturer if found, otherwise "Unknown".
+        """
+        cursor = self.connection.cursor()
+        query = f"SELECT Manufacturer FROM tManufacturer WHERE ManufacturerID = {manufacturer_id}"
+        cursor.execute(query)
+        result = cursor.fetchone()
+        cursor.close()
+        return result.Manufacturer if result else "Unknown"

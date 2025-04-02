@@ -11,3 +11,33 @@
 # Citations: {"Stack Overflow" is not sufficient. Provide repeatable links, book page #, etc.}
 
 # Anything else that's relevant:
+
+
+import random
+
+class ProductService:
+    def __init__(self, connection):
+        self.connection = connection
+
+    def fetch_all_products(self):
+        """
+        Retrieves all product records from the tProduct table.
+        Returns: list: A list of product rows (pyodbc.Row objects).
+        """
+
+        cursor = self.connection.cursor()
+        query = "SELECT ProductID, [UPC-A ], Description, ManufacturerID, BrandID FROM tProduct"
+        cursor.execute(query)
+        results = cursor.fetchall()
+        cursor.close()
+        return results
+
+    def get_random_product(self, product_list):
+        """
+        Randomly selects one product from a given list.
+
+        Parameters:product_list (list): List of product rows.
+
+        Returns:pyodbc.Row: A randomly selected product row.
+        """
+        return random.choice(product_list)

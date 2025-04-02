@@ -13,8 +13,28 @@
 # Anything else that's relevant::
 import pyodbc
 from databaseManagementPackage.databaseManagement import *
+from ManufacturerPackage.manufacturer import *
+from BrandPackage.brand import *
+
 
 if __name__ == "__main__":
     dbm = databaseManagement()
     conn = dbm.connect_to_database()
+    
+    product_service = ProductService(conn)
+    manufacturer_service = ManufacturerService(conn)
+
+    products = product_service.fetch_all_products()
+
+    selected = product_service.get_random_product(products)
+    product_id = selected.ProductID
+    description = selected.Description
+    manufacturer_id = selected.ManufacturerID
+    brand_id = selected.BrandID
+
+    print(f"Selected Product:\n- Description: {description}\n- ProductID: {product_id}\n- ManufacturerID: {manufacturer_id}\n- BrandID: {brand_id}")
+
+    manufacturer_name = manufacturer_service.get_manufacturer_name(manufacturer_id)
+    print(f"Manufacturer Name: {manufacturer_name}")
+
     
