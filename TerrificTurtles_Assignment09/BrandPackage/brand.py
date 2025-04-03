@@ -2,12 +2,12 @@
 # Student Name: Dylan Sams, Andrew Rozsits, Omar Alkhawaga
 # email:  samsds@mail.uc.edu, rozsitaj@mail.uc.edu, alkhawoe@mail.uc.edu
 # Assignment Number: Assignment 09
-# Due Date:   4/2/2025
+# Due Date:   4/3/2025
 # Course #/Section:   IS4010-001
 # Semester/Year:   Spring 2025
 # Brief Description of the assignment:  This assignment is working  in teams to create a project that accesses our SQL Server and extracts some data from the Grocery Store Simulator database, and produces some results.
 # Brief Description of what this module does. This module takes a brandID and wants to looks up the brand name
-# Citations: 
+# Citations: Connect SQL Server to Python: https://medium.com/@noueruzzaman/how-to-connect-sql-server-with-python-in-visual-studio-code-2496593e9733
 
 
 import random
@@ -55,5 +55,5 @@ class ProductService:
         cursor.execute(query)
         result = cursor.fetchone()
         cursor.close()
-        return result.Manufacturer if result else "Unknown"
+        return result.Brand if result else "Unknown"
     

@@ -2,7 +2,7 @@
 # Student Name: Dylan Sams, Andrew Rozsits, Omar Alkhawaga
 # email:  samsds@mail.uc.edu, rozsitaj@mail.uc.edu, alkhawoe@mail.uc.edu
 # Assignment Number: Assignment 09
-# Due Date:   4/2/2025
+# Due Date:   4/3/2025
 # Course #/Section:   IS4010-001
 # Semester/Year:   Spring 2025
 # Brief Description of the assignment:  This assignment is working  in teams to create a project that accesses our SQL Server and extracts some data from the Grocery Store Simulator database, and produces some results.

@@ -37,10 +37,6 @@
     <Compile Include="ManufacturerPackage\__init__.py">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="printPackage\print.py" />
-    <Compile Include="printPackage\__init__.py">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="sumOfItemsSoldPackage\sumOfItemsSold.py" />
     <Compile Include="sumOfItemsSoldPackage\__init__.py">
       <SubType>Code</SubType>
@@ -51,7 +47,6 @@
     <Folder Include="databaseManagementPackage\" />
     <Folder Include="mainPackage\" />
     <Folder Include="ManufacturerPackage\" />
-    <Folder Include="printPackage\" />
     <Folder Include="sumOfItemsSoldPackage\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
