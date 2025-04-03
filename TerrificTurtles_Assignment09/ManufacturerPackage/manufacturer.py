@@ -31,3 +31,5 @@ class ManufacturerService:
         result = cursor.fetchone()
         cursor.close()
         return result.Manufacturer if result else "Unknown"
+    
+    
